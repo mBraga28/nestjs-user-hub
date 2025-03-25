@@ -56,8 +56,7 @@ export class UserController {
     }
 
     @Delete(':id')
-    @UseGuards(JwtAuthGuard, RolesGuard)
-    @Roles(Role.Admin)
+    @UseGuards(JwtAuthGuard)
     @ApiBearerAuth()
     @ApiOperation({ summary: 'Delete a user by ID' })
     @ApiResponse({ status: 200, description: 'The user has been successfully deleted.' })

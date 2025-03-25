@@ -8,12 +8,12 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
 
-  const allowedOrigin = process.env.CLIENT_ORIGIN;
+  // const allowedOrigin = process.env.CLIENT_ORIGIN;
 
-  app.enableCors({
-    origin: allowedOrigin,
-    credentials: true,
-  });
+  // app.enableCors({
+  //   origin: allowedOrigin,
+  //   credentials: true,
+  // });
 
   const config = new DocumentBuilder()
     .setTitle('User Service API')
