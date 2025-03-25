@@ -25,6 +25,9 @@ RUN npx prisma generate
 # Compilando a aplicação
 RUN npm run build
 
+# Executa as migrations
+RUN npx prisma migrate deploy
+
 # Executando o seed para popular o banco (certifique-se de que o banco esteja acessível nessa etapa)
 RUN npm run seed
 
