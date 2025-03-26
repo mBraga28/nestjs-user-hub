@@ -20,7 +20,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "npx ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.6",
@@ -43,7 +43,9 @@
     "passport-local": "^1.0.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.2",
