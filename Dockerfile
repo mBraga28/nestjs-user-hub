@@ -29,4 +29,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Iniciando a aplicação
-CMD ["sh", "-c", "start:render"]
+CMD ["npm", "run", "start:render"]
