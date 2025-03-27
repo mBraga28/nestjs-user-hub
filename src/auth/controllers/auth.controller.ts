@@ -8,7 +8,7 @@ import { ResetPasswordDto } from '../dto/reset-password.dto';
 import { UserService } from 'src/user/services/user.service';
 
 @ApiTags('auth')
-@Controller('auth')
+@Controller()
 export class AuthController {
   constructor(private authService: AuthService, private userService: UserService) {}
 
